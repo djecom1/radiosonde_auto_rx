@@ -337,8 +337,7 @@ def telemetry_filter(telemetry):
         return True
     else:
         logging.warning("Payload ID %s does not match regex. Discarding." % telemetry['id'])
-#        return False
-	return True
+        return False
 
 
 def main():
